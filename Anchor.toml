@@ -8,5 +8,9 @@ url = "https://anchor.projectserum.com"
 cluster = "localnet"
 wallet = "/Users/tommyjohnson/.config/solana/id.json"
 
+[[test.genesis]]
+address = "9xQeWvG816bUx9EPjHmaT23yvVM2ZWbrrpZb9PusVFin"
+program = "tests/deps/agnostic_orderbook.so"
+
 [scripts]
 test = "npx ts-mocha -p ./tsconfig.json -t 1000000 tests/**/*.ts"
